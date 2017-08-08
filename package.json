@@ -1,16 +1,14 @@
 {
-  "name": "react-webpack-boilerplate",
-  "version": "2.0.0",
-  "description": "Minimalistic ES6 React boilerplate",
+  "name": "time-docker-dashboard",
+  "version": "1.0.0",
   "main": "index.js",
   "scripts": {
     "start": "webpack-dev-server",
     "clean": "rimraf dist",
     "production": "cross-env npm run clean && webpack --config webpack.production.config.js --progress --profile --colors",
-    "lint": "eslint ./app/**/**.js",
-    "test": "mocha --compilers js:babel-core/register --recursive ./tests/**/*.js"
+    "lint": "eslint ./app/**/**.js"
   },
-  "author": "Kliment Petrov <kleopetroff@gmail.com>",
+  "author": "Kuldeep Keshwar <kuldeepkeshwar@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "cross-env": "^5.0.1",
@@ -30,11 +28,8 @@
     "babel-preset-react-boilerplate": "1.1.1",
     "babel-preset-react-hmre": "1.1.1",
     "babel-preset-stage-2": "6.24.1",
-    "chai": "4.1.0",
-    "chai-enzyme": "0.8.0",
     "copy-webpack-plugin": "4.0.1",
     "css-loader": "0.28.4",
-    "enzyme": "2.9.1",
     "eslint": "3.19.0",
     "eslint-config-airbnb": "15.1.0",
     "eslint-loader": "1.8.0",

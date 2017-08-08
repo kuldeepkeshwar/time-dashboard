@@ -1,6 +1,8 @@
 
 ## Starting the dev server
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/kuldeepkeshwar/time-dashboard.svg)](https://greenkeeper.io/)
+
 Make sure you have Node.js installed.
 
 1. `git clone https://github.com/kuldeepkeshwar/react-webpack-boilerplate.git`

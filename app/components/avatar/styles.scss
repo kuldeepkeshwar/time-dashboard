@@ -1,0 +1,14 @@
+@import './../../assets/scss/_app.scss';
+
+.avatar {
+  width: 24px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 24px;
+  background: $light-grey;
+  display: inline-block;
+
+  img {
+    width: 100%;
+  }
+}

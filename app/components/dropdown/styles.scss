@@ -1,0 +1,81 @@
+@import './../../assets/scss/_app.scss';
+
+
+.dropdown {
+  display: inline-block;
+  position: relative;
+
+  .dropdown-link {
+    cursor: pointer;
+    font-size: 14px;
+    color: $light-grey;
+    position: relative;
+    outline:none;
+  }
+
+  .dropdown-menu {
+    padding: 5px 0;
+    cursor: pointer;
+    border-radius: 6px;
+    box-shadow: 1px 2px 3px 0 rgba(0,0,0,0.1);
+    position: absolute;
+    background: $white;      
+    margin-top: 5px;
+    border: solid 1px $base-border;
+    right: -10px;
+    z-index: 1;
+
+    .dropdown-item {
+      display: block;
+      min-width: 84px;
+      font-size: 14px;
+      color: $light-grey;
+      padding: 10px 15px;
+      outline: none;
+
+      &:hover {
+        font-weight: 500;
+      }
+
+      &.active {
+        background: $light-grey;
+        color: $white;
+      }
+    }
+  }
+}
+.arrowdown {
+  position: relative;
+  display: inline-block;
+  width: 6px;
+  height: 8px;
+  margin-left: 6px;
+
+  &::after, &::before {
+    content: '';
+    position: absolute;
+    height: 7px;
+    width: 2px;
+    background: $light-grey;
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+
+  &::before {
+    transform: rotate(45deg);
+    right: 0;
+  }
+  
+  &.open {
+    &::after {
+      transform: rotate(45deg);
+    }
+
+    &::before {
+      transform: rotate(-45deg);
+      right: 0;
+    }
+  }
+}

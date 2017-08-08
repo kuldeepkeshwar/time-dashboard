@@ -1,0 +1,81 @@
+@import './../../assets/scss/_app.scss';
+
+
+.flex-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+
+  .name {
+    flex: 1 auto;
+  }
+
+  .progress-bar {
+    margin-right: 20px;
+  }
+}
+
+
+
+
+
+.progress-bar {
+  height: 10px;
+  background: $base-grey;
+  border-radius: 100px;
+  position: relative;
+  overflow: hidden;
+
+  .progress {
+    position: absolute;
+    background: $base-red;
+    height: 10px;
+    width: 13%;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+  }
+}
+
+
+.activity-detail {
+  .avatar {
+    margin-right: 15px;
+  }
+  
+  .name {
+    font-size: 14px;
+  }
+
+  .progress-bar {
+    min-width: 160px;
+  }
+
+  .percentage {
+    font-weight: bold;
+  }
+}
+
+
+.user-list {
+  .avatar {
+    border: solid 1px $white;
+    position: relative;
+
+    &:nth-child(2) {
+      left: -9px;
+    }
+
+    &:nth-child(3) {
+      left: -18px;
+    }
+  }
+}
+
+.link {
+  font-size: 14px;
+  color: $light-grey;
+}
+

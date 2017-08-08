@@ -1,0 +1,13 @@
+@import './../../assets/scss/_app.scss';
+
+
+
+.label {
+  font-size: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  background-color: rgba(101,127,172,0.1);
+  color: $light-active-color;
+  padding: 5px 5px;
+  border-radius: 3px;
+}
